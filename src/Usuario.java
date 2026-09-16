@@ -6,15 +6,15 @@ public class Usuario {
 
     public void alogarLivro(Livro livro) {
 
-        livro.emprestado = true;
+        livro.setEmprestado(true);
         this.livro = livro;
-        System.out.println("Olá " + nome + "! O Livro " + livro.titulo + " foi alocado!");
+        System.out.println("Olá " + nome + "! O Livro " + livro.getTitulo() + " foi alocado!");
     }
 
     public void devolverLivro(Livro livro) {
-        livro.emprestado = false;
+        livro.setEmprestado(false);
         this.livro = livro;
-        System.out.println("Olá " + nome + "! O Livro " + livro.titulo + " foi devolvido!");
+        System.out.println("Olá " + nome + "! O Livro " + livro.getTitulo() + " foi devolvido!");
 
     }
 
